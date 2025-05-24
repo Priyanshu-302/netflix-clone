@@ -372,7 +372,6 @@ nav {
   text-align: center;
 }
 
-/* ----------------- Responsive Styles ----------------- */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -385,12 +384,7 @@ nav {
     gap: 10px;
   }
 
-  .hero {
-    padding: 20px;
-  }
-
-  .bolded,
-  .semi-bolded {
+  .bolded, .semi-bolded {
     font-size: 35px;
   }
 
@@ -402,30 +396,23 @@ nav {
     font-size: 14px;
   }
 
-  .movies {
-    margin-left: 0;
-    justify-content: center;
+  .texts, .below-span {
+    flex-direction: column;
   }
 
+  .more-box {
+    width: 90%;
+  }
+
+  .trending h2,
   .more-reasons h2,
-  .questions h2,
-  .trending h2 {
+  .questions h2 {
     margin-left: 20px;
   }
 
+  .movies,
   .buttons {
     margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .question-btn {
-    padding: 16px;
-    font-size: 18px;
-  }
-
-  .main-box {
-    flex-direction: column;
-    align-items: center;
   }
 
   .new-call,

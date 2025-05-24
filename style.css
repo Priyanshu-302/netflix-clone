@@ -1,18 +1,20 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Global Styles */
 body,
 html {
   width: 100%;
   overflow-x: hidden;
   background-color: black;
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
-    sans-serif;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
+/* Main Hero Section */
 .main {
   background-image: url("IN-en-20250519-TRIFECTA-perspective_8f1ca896-9e49-4a4e-90f0-22fc49650bd9_large.jpg");
   height: 85vh;
@@ -31,6 +33,7 @@ html {
   top: 0;
 }
 
+/* Navbar */
 nav {
   max-width: 90vw;
   margin: auto;
@@ -46,7 +49,6 @@ nav {
 .logo img {
   width: 150px;
   position: relative;
-  top: 0;
   z-index: 10;
 }
 
@@ -88,6 +90,7 @@ nav {
   text-align: center;
 }
 
+/* Hero Text */
 .hero {
   height: 100%;
   display: flex;
@@ -161,6 +164,7 @@ nav {
   background: rgb(184, 7, 7);
 }
 
+/* Trending Section */
 .trending h2 {
   color: white;
   font-weight: bold;
@@ -203,17 +207,7 @@ nav {
   transform: scale(1.1);
 }
 
-@media (max-width: 480px) {
-  .image {
-    width: 80vw;
-    height: 120vw;
-  }
-
-  .movies {
-    gap: 15px;
-  }
-}
-
+/* More Reasons Section */
 .more-reasons h2 {
   color: white;
   font-weight: bold;
@@ -251,8 +245,10 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
+/* FAQ Section */
 .questions h2 {
   color: white;
   font-weight: bold;
@@ -265,28 +261,26 @@ nav {
   margin-top: 10px;
   margin-left: 120px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   gap: 5px;
 }
 
 .question-btn {
-  border-radius: 0px;
   border: none;
-  margin-right: 120px;
   padding: 24px 48px;
   cursor: pointer;
   background-color: rgb(48, 46, 46);
   color: white;
   text-align: left;
   font-size: 25px;
-  transition: background 0s ease;
+  transition: background 0.2s ease;
 }
 
 .question-btn:hover {
   background-color: rgb(78, 75, 75);
 }
 
+/* Below Membership Section */
 .h3 {
   color: white;
   margin-top: 90px;
@@ -341,6 +335,7 @@ nav {
   background: rgb(184, 7, 7);
 }
 
+/* Footer Contact and Language */
 .new-call {
   margin-top: 70px;
   margin-left: 120px;
@@ -377,7 +372,7 @@ nav {
   text-align: center;
 }
 
-/* ---------- Responsive Styles ---------- */
+/* ----------------- Responsive Styles ----------------- */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -391,95 +386,50 @@ nav {
   }
 
   .hero {
-    text-align: center;
     padding: 20px;
   }
 
-  .below-span {
-    flex-direction: column;
-    align-items: center;
+  .bolded,
+  .semi-bolded {
+    font-size: 35px;
   }
 
-  .below-span input {
-    width: 90%;
-    max-width: 400px;
+  .mid-bolded {
+    font-size: 16px;
   }
 
-  .hero-btn {
-    width: 90%;
-    max-width: 200px;
+  .less-bolded {
+    font-size: 14px;
+  }
+
+  .movies {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .more-reasons h2,
+  .questions h2,
+  .trending h2 {
+    margin-left: 20px;
+  }
+
+  .buttons {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .question-btn {
+    padding: 16px;
+    font-size: 18px;
   }
 
   .main-box {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
-  .left,
-  .right {
-    width: 100%;
-  }
-
-  .right img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .movies {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .movies img {
-    width: 45%;
-  }
-
-  .buttons button {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  .texts {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .texts input {
-    width: 90%;
-    max-width: 400px;
-  }
-
-  .language select {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .bolded {
-    font-size: 28px;
-  }
-
-  .mid-bolded {
-    font-size: 18px;
-  }
-
-  .less-bolded {
-    font-size: 16px;
-  }
-
-  .movies img {
-    width: 90%;
-  }
-
-  .question-btn {
-    font-size: 14px;
-    padding: 15px;
-  }
-
-  .footer p {
-    font-size: 12px;
+  .new-call,
+  .language {
+    margin-left: 20px;
   }
 }

@@ -161,22 +161,6 @@ nav {
   background: rgb(184, 7, 7);
 }
 
-@media (max-width: 768px) {
-  .bolded,
-  .semi-bolded {
-    font-size: 35px;
-  }
-
-  .mid-bolded {
-    font-size: 16px;
-  }
-
-  .hero-btn,
-  .texts input {
-    font-size: 16px;
-  }
-}
-
 .trending h2 {
   color: white;
   font-weight: bold;
@@ -217,19 +201,6 @@ nav {
 
 .image:hover {
   transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-  .trending h2 {
-    margin-left: 20px;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .image {
-    width: 45vw;
-    height: 67vw;
-  }
 }
 
 @media (max-width: 480px) {
@@ -280,24 +251,6 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 15px;
-}
-
-@media (max-width: 768px) {
-  .more-box {
-    max-width: 100%;
-  }
-
-  .more-reasons h2 {
-    font-size: 2rem;
-  }
-
-  .more-box h3 {
-    font-size: 18px;
-  }
-
-  .more-box p {
-    font-size: 15px;
-  }
 }
 
 .questions h2 {
@@ -422,4 +375,111 @@ nav {
   background-color: white;
   color: black;
   text-align: center;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .below-span {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .below-span input {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .hero-btn {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .main-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .movies {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .movies img {
+    width: 45%;
+  }
+
+  .buttons button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .texts {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .texts input {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .language select {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bolded {
+    font-size: 28px;
+  }
+
+  .mid-bolded {
+    font-size: 18px;
+  }
+
+  .less-bolded {
+    font-size: 16px;
+  }
+
+  .movies img {
+    width: 90%;
+  }
+
+  .question-btn {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
 }
